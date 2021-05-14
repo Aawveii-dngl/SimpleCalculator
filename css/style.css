@@ -1,0 +1,38 @@
+.total {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 600px;
+  height: 600px;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+.total-container {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+.display {
+  width: 90%;
+  height: 150px;
+  background-color: white;
+  margin: 10px;
+  font-size: 3rem;
+  padding-left: 2rem;
+  border: none;
+}
+.display:focus {
+  outline: none;
+}
+.number {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 95%;
+  height: 400px;
+  grid-gap: 20px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+button {
+  border-radius: 10px;
+  font-size: 3rem;
+}

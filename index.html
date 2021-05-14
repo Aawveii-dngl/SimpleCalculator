@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="total">
+      <div class="total-container">
+        <input type="text" class="display" name="" id="display" />
+        <div class="number">
+          <button name="AC" onclick="clearscr()">AC</button>
+          <button value="(" onclick="passval(this.value)">(</button>
+          <button value=")" onclick="passval(this.value)">)</button>
+
+          <!-- This directly passes the value and even eventlistener can be used for this but it wont support like e.value 
+            It will be like 
+            passval(e)
+        -->
+
+          <button value="/" onclick="passval(this.value)">/</button>
+          <button value="7" onclick="passval(this.value)">7</button>
+          <button value="8" onclick="passval(this.value)">8</button>
+          <button value="9" onclick="passval(this.value)">9</button>
+          <button value="*" onclick="passval(this.value)">*</button>
+          <button value="4" onclick="passval(this.value)">4</button>
+          <button value="5" onclick="passval(this.value)">5</button>
+          <button value="6" onclick="passval(this.value)">6</button>
+          <button value="-" onclick="passval(this.value)">-</button>
+          <button value="1" onclick="passval(this.value)">1</button>
+          <button value="2" onclick="passval(this.value)">2</button>
+          <button value="3" onclick="passval(this.value)">3</button>
+          <button value="+" onclick="passval(this.value)">+</button>
+          <button value="0" onclick="passval(this.value)">0</button>
+          <button value="." onclick="passval(this.value)">.</button>
+          <button onclick="solve()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
